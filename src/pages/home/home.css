@@ -1,0 +1,30 @@
+.home {
+	position: relative;
+	background-color: #585CC6;
+	/* height: 1707px; */
+	
+}
+.wrapper {
+	padding: 93px 0 0px 88px;
+}
+
+
+.title {
+	margin: 0;
+	margin-bottom: 88px;
+	/* font-family: 'Factor A TRIAL'; */
+	font-weight: 500;
+	font-size: 124px;
+	line-height: 148px;
+	letter-spacing: -0.0124em;
+	color: #FFFFFF;
+	
+	
+
+}
+
+/* .userCard {
+	position: absolute;
+	left: 599px;
+	top: 593px
+} */

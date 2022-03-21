@@ -1,0 +1,62 @@
+.userCard {
+	letter-spacing: 0.01em;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 24px;
+	/* margin-bottom: 152px ; */
+}
+
+.userCard-wrapper {
+	display: flex;
+	/* position: relative; */
+}
+
+.user-image {
+	position: relative;
+	top: 32px;
+}
+
+.userInfo {
+	background: #FFFFFF;
+	border-radius: 2px;
+	display: flex;
+	flex-direction: column;
+	padding: 40px;
+	width: 681px;
+	height: 303px;
+}
+
+.info-header {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 20px;
+	
+}
+.header-name {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 32px;
+	color: #585CC6;
+}
+
+.header-birthday {
+	color: #8A8A8A;
+
+}
+
+.info-info {
+	display: flex;
+	margin-bottom: 18px;
+}
+.info-item {
+	margin-right: 40px;
+}
+
+.info-about {
+	margin-bottom: 20px;
+}
+
+.info-add {
+	margin-bottom: 36px;
+}
+
