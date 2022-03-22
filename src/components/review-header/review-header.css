@@ -1,22 +1,21 @@
 .review-header {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .review-title {
-	font-size: 68px;
-	line-height: 88px;
-	margin-left: 80px;
-	margin-top: 56px;
+  font-size: 68px;
+  line-height: 88px;
+  margin-left: 80px;
+  margin-top: 39px;
 }
 
 .plus-icon {
-	height: 14.3px;
-	width: 14.3px;
+  height: 14.3px;
+  width: 14.3px;
 }
 
-.add-review-btn{
-	margin-right: 56px;
-	
+.add-review-btn {
+  margin-right: 56px;
 }

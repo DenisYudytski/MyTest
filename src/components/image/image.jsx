@@ -1,7 +1,7 @@
 import React from 'react'
 
-export const Image = ({ ...props }) => {
+export const Image = ({ margin, ...props }) => {
 	return (
-		<img {...props} />
+		<img style={{ display: 'block', marginRight: `${margin}` }} {...props} />
 	)
 }

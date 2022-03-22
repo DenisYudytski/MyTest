@@ -11,8 +11,8 @@ export const Home = () => {
 			<div className="wrapper">
 				<h1 className='title'>Добро пожаловать в академию!</h1>
 				<UserCard className='userCard' />
-				<ReviewList />
 			</div>
+			<ReviewList />
 		</div>
 	)
 }

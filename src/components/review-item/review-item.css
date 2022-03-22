@@ -1,0 +1,22 @@
+.review-item {
+  background-color: #f5f5f5;
+  width: 519px;
+  height: 279px;
+  position: relative;
+}
+.review-item__header {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+}
+.name {
+  margin-left: 20px;
+}
+.date {
+  position: absolute;
+  right: 24px;
+  top: 24px;
+}
+.review-item__content {
+  margin-left: 20px;
+}

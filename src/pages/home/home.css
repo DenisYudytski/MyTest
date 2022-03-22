@@ -1,26 +1,22 @@
 .home {
-	position: relative;
-	background-color: #585CC6;
-	/* height: 1707px; */
-	
+  position: relative;
+  background-color: #585cc6;
+  /* height: 1707px; */
+  padding-bottom: 89px;
 }
 .wrapper {
-	padding: 93px 0 0px 88px;
+  padding: 93px 0 0px 88px;
 }
 
-
 .title {
-	margin: 0;
-	margin-bottom: 88px;
-	/* font-family: 'Factor A TRIAL'; */
-	font-weight: 500;
-	font-size: 124px;
-	line-height: 148px;
-	letter-spacing: -0.0124em;
-	color: #FFFFFF;
-	
-	
-
+  margin: 0;
+  margin-bottom: 88px;
+  /* font-family: 'Factor A TRIAL'; */
+  font-weight: 500;
+  font-size: 124px;
+  line-height: 148px;
+  letter-spacing: -0.0124em;
+  color: #ffffff;
 }
 
 /* .userCard {

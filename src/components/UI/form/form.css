@@ -1,0 +1,8 @@
+.send-block {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+}
+.send-about {
+  margin-left: 16px;
+}

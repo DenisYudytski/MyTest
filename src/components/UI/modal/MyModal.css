@@ -1,0 +1,36 @@
+.modal-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-content {
+  position: relative;
+  background-color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: -0.0124em;
+  text-align: left;
+  padding: 24px;
+}
+.modal-title {
+  color: #333333;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.exit-btn {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  cursor: pointer;
+}

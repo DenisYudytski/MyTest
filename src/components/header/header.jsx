@@ -11,7 +11,7 @@ export const Header = () => {
 	return (
 		<header className='header'>
 			<div className="header-image">
-				<Image src={me} alt="эх..." height={52} width={52} />
+				<Image src={me} alt="эх..." height={52} width={52} margin="20px" />
 				<span className='image__title'>Денис Юдыцкий</span>
 			</div>
 			<div className="header-logo">

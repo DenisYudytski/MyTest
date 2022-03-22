@@ -1,13 +1,17 @@
 .MyButton {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	border: none;
-	color: white;
-	text-align: center;
-	border-radius: 2px;
-	padding: 17px, 28px, 17px, 28px;
-	background: #585CC6;
-	border: none;
-	z-index: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  color: white;
+  text-align: center;
+  border-radius: 2px;
+  padding: 17px, 28px, 17px, 28px;
+  background: #585cc6;
+  border: none;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 1%;
+  font-weight: 600;
+  z-index: 3;
 }
