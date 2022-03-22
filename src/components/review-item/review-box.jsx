@@ -3,14 +3,19 @@ import { ReviewItem } from './review-item'
 import './review-box.css'
 
 export const ReviewBox = ({ views, index }) => {
-	console.log(views);
+
 	return (
+
 		<div className='review-box'>
-			<ReviewItem view={views[index]} />
-			{views[index + 1] &&
-				<ReviewItem view={views[index + 1]} />
-			}
+			{index !== views.length ? <ReviewItem margin="24px" view={views[index]} /> : null}
+			{views[index + 1] ?
+				<ReviewItem image={views.image} view={views[index + 1]} /> : null}
+
+
+
 
 		</div>
+
+
 	)
 }

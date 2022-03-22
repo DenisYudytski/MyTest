@@ -1,4 +1,7 @@
 import React, { useState } from 'react'
+import { useDispatch } from 'react-redux'
+import { addView } from '../../../redux/reducers/views'
+import { formatDate } from '../../../utils'
 import { MyButton } from '../button/MyButton'
 import { MyInput } from '../input/input'
 import { MyTextArea } from '../text-area/text-area'
@@ -8,10 +11,21 @@ export const MyForm = () => {
 
 	const [inputValue, setInputValue] = useState('')
 	const [areaValue, setAreaValue] = useState('')
+	const dispatch = useDispatch()
 
 	const sendView = () => {
-		console.log(inputValue);
-		console.log(areaValue);
+		const date = new Date()
+		const view = {
+			id: Date.now(),
+			image: '',
+			name: inputValue,
+			content: areaValue,
+			date: formatDate(date)
+
+		}
+		dispatch(addView(view))
+		setInputValue('')
+		setAreaValue('')
 	}
 	return (
 		<form onSubmit={(e) => e.preventDefault()}>

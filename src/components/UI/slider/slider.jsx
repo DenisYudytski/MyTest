@@ -7,39 +7,41 @@ export const Slider = ({ views }) => {
 	const [slideIndex, setSlideIndex] = useState(1)
 
 	const nextSlide = () => {
-		if (slideIndex !== views.length) {
-			setSlideIndex(slideIndex + 1)
-		} else if (slideIndex === views.length) {
+		if (slideIndex !== views.length && (slideIndex + 2) <= views.length) {
+			setSlideIndex(slideIndex + 2)
+
+		} else if (slideIndex === views.length - 1 || slideIndex === views.length) {
 			setSlideIndex(1)
 		}
 	}
 
 	const prevSlide = () => {
-		if (slideIndex !== 1) {
-			setSlideIndex(slideIndex - 1)
-		} else if (slideIndex === 1) {
+		if (slideIndex !== 1 && slideIndex - 2 >= 1) {
+			setSlideIndex(slideIndex - 2)
+		} else if (slideIndex === 1 && views.length % 2 == 0) {
+			setSlideIndex(views.length - 1)
+		} else {
 			setSlideIndex(views.length)
 		}
 	}
-
 	return (
-		<div className='container-slider'>
-			{views.map((view, index) =>
-				<div className={slideIndex === index + 1 || slideIndex === index + 2 ? "slide active-anim" : "slide"}>
-					<ReviewBox
-						key={view.id}
-						index={index}
-						views={views}
-					/>
-				</div >
-
-			)}
-
-			<div className="slides-buttons">
-				<BtnSlider moveSlide={nextSlide} direction="prev" />
-				<BtnSlider moveSlide={prevSlide} direction="next" />
+		<div>
+			<div className='container-slider'>
+				{views.map((view, index) => index % 2 === 0 ?
+					<div className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>
+						<ReviewBox
+							key={view.name}
+							index={index}
+							views={views}
+						/>
+					</div >
+					: null
+				)}
 			</div>
-
+			<div className="slides-buttons">
+				<BtnSlider moveSlide={prevSlide} direction="prev" />
+				<BtnSlider moveSlide={nextSlide} direction="next" />
+			</div>
 		</div>
 	)
 }

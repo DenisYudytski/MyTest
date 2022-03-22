@@ -1,3 +1,7 @@
+@font-face {
+  font-family: FactoryNormal;
+  src: url('../../fonts/FactorAMedium-Regular.ttf');
+}
 .home {
   position: relative;
   background-color: #585cc6;
@@ -11,7 +15,7 @@
 .title {
   margin: 0;
   margin-bottom: 88px;
-  /* font-family: 'Factor A TRIAL'; */
+  font-family: FactoryNormal;
   font-weight: 500;
   font-size: 124px;
   line-height: 148px;

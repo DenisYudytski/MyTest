@@ -2,8 +2,9 @@ import React from 'react'
 import { Image } from '../image/image'
 import me from '../../img/Me.jpg'
 import sex from '../../img/svg/sex.svg'
-import './userCard.css'
+import { about } from '../../MOK/aboutMe'
 import { UserInfo } from '../user-info/user-info'
+import './userCard.css'
 
 export const UserCard = () => {
 	return (
@@ -12,7 +13,7 @@ export const UserCard = () => {
 				<div className="user-image">
 					<Image src={me} width='519' height='383' />
 				</div>
-				<UserInfo image={sex} />
+				<UserInfo user={about} image={sex} />
 			</div>
 		</div>
 	)

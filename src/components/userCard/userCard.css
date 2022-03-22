@@ -1,3 +1,15 @@
+@font-face {
+  font-family: FactorBold;
+  src: url('../../fonts/FactorA-Bold.ttf');
+}
+@font-face {
+  font-family: GilroyReg;
+  src: url('../../fonts/Gilroy-Regular.ttf');
+}
+@font-face {
+  font-family: Gilroymedium;
+  src: url('../../fonts/Gilroy-Medium.ttf');
+}
 .userCard {
   letter-spacing: 0.01em;
   font-weight: 400;
@@ -17,6 +29,7 @@
 }
 
 .userInfo {
+  font-family:Gilroymedium;
   background: #ffffff;
   border-radius: 2px;
   display: flex;
@@ -32,13 +45,14 @@
   margin-bottom: 20px;
 }
 .header-name {
-  font-weight: 700;
+  font-family: FactorBold;
   font-size: 32px;
   line-height: 32px;
   color: #585cc6;
 }
 
 .header-birthday {
+  font-family: GilroyReg;
   color: #8a8a8a;
 }
 
@@ -46,7 +60,17 @@
   display: flex;
   margin-bottom: 18px;
 }
+.sex-item::after {
+  content: '';
+  background-image: url('../../img/svg/sex.svg');
+  width: 16px;
+  height: 18px;
+  display: inline-block;
+  margin-left: 10px;
+  margin-bottom: -3px;
+}
 .info-item {
+
   margin-right: 40px;
 }
 
@@ -56,4 +80,23 @@
 
 .info-add {
   margin-bottom: 36px;
+}
+.info-pet {
+  align-items: center;
+}
+.pet::before {
+  content: '';
+  background-image: url('../../img/svg/DogFood.svg');
+  width: 32px;
+  height: 21px;
+  display: inline-block;
+  margin-right: 12px;
+  margin-bottom: -3px;
+}
+.sex{
+  display: flex;
+  
+}
+.sex-item {
+  margin-right: 10px;
 }
