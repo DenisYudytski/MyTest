@@ -8,7 +8,8 @@ import './review-box.css'
 
 export const ReviewBox = ({ views, index }) => {
 
-	const images = [buba, , margo, dima]
+	const images = [buba, undefined, margo, dima] // react не хочет отображать картинки по адресам из объекта...(
+	console.log(images);
 	return (
 
 		<div className='review-box'>

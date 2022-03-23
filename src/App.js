@@ -6,7 +6,7 @@ import spiral from './img/svg/Spiral.svg'
 import { Footer } from './components/footer/footer';
 
 function App() {
-
+  // localStorage.clear()
   return (
 
     <div className="App">

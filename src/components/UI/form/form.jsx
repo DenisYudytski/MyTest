@@ -5,8 +5,9 @@ import { formatDate } from '../../../utils'
 import { MyButton } from '../button/MyButton'
 import { MyInput } from '../input/input'
 import { MyTextArea } from '../text-area/text-area'
-import { BsInfoSquare } from 'react-icons/bs'
+import info from '../../../img/svg/info.svg'
 import './form.css'
+import { Image } from '../../image/image'
 
 export const MyForm = ({ modalVisible }) => {
 
@@ -19,8 +20,6 @@ export const MyForm = ({ modalVisible }) => {
 	const [formValid, setFormValid] = useState(false)
 	const dispatch = useDispatch()
 
-
-
 	useEffect(() => {
 		if (nameErrorMessage || areaErrorMessage) {
 			setFormValid(false)
@@ -31,8 +30,10 @@ export const MyForm = ({ modalVisible }) => {
 
 	const sendView = async () => {
 		try {
+			dispatch(setStatus("loading"))
 			const date = new Date()
-			const view = {
+			// let view
+			const view = {			//Что бы ошибку спровоцировать я писал здесь вместо объекта let view и ничего не присваивал, не знаю как без запросов на сервер ошибку организовать
 				id: Date.now(),
 				image: '',
 				name: inputValue,
@@ -40,9 +41,19 @@ export const MyForm = ({ modalVisible }) => {
 				date: formatDate(date)
 			}
 			modalVisible(false)
+			if (view === undefined) {
+				throw new Error
+			}
 			dispatch(addView(view))
+			setTimeout(() => {  // Типа жду ответа сервера))0)0
+				dispatch(setStatus('load'))
+			}, 2000)
+
 		} catch (error) {
-			dispatch(setStatus('error'))
+
+			setTimeout(() => {
+				dispatch(setStatus('error'))
+			}, 2000)
 		}
 
 
@@ -121,10 +132,7 @@ export const MyForm = ({ modalVisible }) => {
 					Отправить отзыв
 				</MyButton>
 				<div className='send-moderation'>
-					<BsInfoSquare
-						fill='#585cc6'
-						fontSize="18px"
-					/>
+					<Image src={info} />
 					<div className='send-about'>Все отзывы проходят модерацию в течение 2 часов</div>
 				</div>
 			</div>

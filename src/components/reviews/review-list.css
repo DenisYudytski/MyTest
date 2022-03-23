@@ -1,5 +1,16 @@
 .review-list {
+  position: relative;
   background-color: #fff;
   width: 1198px;
   height: 525px;
+}
+.toast {
+	position: absolute;
+	right: -200px;
+	bottom: -75px;
+	}
+.elipse {
+  position: absolute;
+	right: 140px;
+	bottom: 20px;
 }

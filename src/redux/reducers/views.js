@@ -6,7 +6,7 @@ const viewsSlice = createSlice({
 	name: "views",
 	initialState: {
 		views: JSON.parse(localStorage.getItem('views')) ?? views,
-		status: "loading"
+		status: "waiting"
 	},
 	reducers: {
 		addView: (state, action) => {

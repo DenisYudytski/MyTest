@@ -1,6 +1,4 @@
 import React from 'react'
-import { Image } from '../image/image'
-import dogFood from '../../img/svg/DogFood.svg'
 
 export const InfoPet = ({ pet }) => {
 	return (

@@ -1,0 +1,47 @@
+.loader-wrapper {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.2);
+  	backdrop-filter: blur(10px);
+	z-index: 100;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@keyframes load {
+	0% {
+		fill-opacity: 1;
+	}
+	100% {
+		fill-opacity: 0;
+	}
+}
+
+.one {
+	animation: load 0.7s ease 0s infinite normal;
+}
+.two{
+	animation: load 0.7s ease 0s infinite normal;
+}
+.three{
+	animation: load 0.7s ease 0s infinite normal;
+}
+.four{
+	animation: load 0.7s ease 0s infinite normal;
+}
+.five{
+	animation: load 0.7s ease 0s infinite normal;
+}
+.six{
+	animation: load 0.7s ease 0s infinite normal;
+}
+.seven{
+	animation: load 0.7s ease 0s infinite normal;
+}
+.eight{
+	animation: load 0.7s ease 0s infinite normal;
+}

@@ -3,7 +3,9 @@ import { Image } from '../image/image'
 import def from '../../img/avatar.png'
 import './review-item.css'
 
+
 export const ReviewItem = ({ view, margin, image = def }) => {
+
 	return (
 		<div style={{ marginRight: `${margin}` }} className='review-item'>
 			<div className="review-item__header">
