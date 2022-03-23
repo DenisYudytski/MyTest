@@ -1,9 +1,9 @@
 @font-face {
   font-family: GilroySemi;
-  src: url('../../../fonts/Gilroy-SemiBold.ttf');
+  src: url("../../../fonts/Gilroy-SemiBold.ttf");
 }
 .MyButton {
-  font-family:GilroySemi ;
+  font-family: GilroySemi;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -11,10 +11,40 @@
   color: white;
   text-align: center;
   border-radius: 2px;
-  padding: 17px, 28px, 17px, 28px;
-  background: #585cc6;
+  padding: 17px, 28px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #585cc6 50%, #585cc6 50%);
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 1%;
+  position: relative;
   z-index: 3;
+}
+.MyButton::before {
+  content: "";
+  display: block;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, #696dc8 50%, #585cc6 50%);
+  transition: opacity 0.4s ease-in-out;
+  z-index: -3;
+}
+.MyButton:hover::before {
+  opacity: 1;
+}
+.MyButton:active::before {
+  opacity: 0;
+}
+.MyButton:active {
+  background: linear-gradient(to right, #797ddf 50%, #797ddf 50%);
+  transition: all 0.3s ease;
+}
+.MyButton:disabled {
+  background: #8a8a8a;
+  cursor: default;
 }

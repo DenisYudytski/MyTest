@@ -1,10 +1,11 @@
 import React, { useState } from 'react'
 import { ReviewBox } from '../../review-item/review-box'
-import './slider.css'
 import { BtnSlider } from './btn-slider'
+import './slider.css'
 
 export const Slider = ({ views }) => {
 	const [slideIndex, setSlideIndex] = useState(1)
+
 
 	const nextSlide = () => {
 		if (slideIndex !== views.length && (slideIndex + 2) <= views.length) {
@@ -18,7 +19,7 @@ export const Slider = ({ views }) => {
 	const prevSlide = () => {
 		if (slideIndex !== 1 && slideIndex - 2 >= 1) {
 			setSlideIndex(slideIndex - 2)
-		} else if (slideIndex === 1 && views.length % 2 == 0) {
+		} else if (slideIndex === 1 && views.length % 2 === 0) {
 			setSlideIndex(views.length - 1)
 		} else {
 			setSlideIndex(views.length)

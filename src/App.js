@@ -6,6 +6,7 @@ import spiral from './img/svg/Spiral.svg'
 import { Footer } from './components/footer/footer';
 
 function App() {
+
   return (
 
     <div className="App">

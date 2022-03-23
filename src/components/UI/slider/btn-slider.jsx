@@ -1,6 +1,5 @@
 import React from 'react'
 import './slider.css'
-import { Image } from '../../image/image'
 import { FiArrowRight, FiArrowLeft } from 'react-icons/fi'
 
 export const BtnSlider = ({ moveSlide, direction }) => {

@@ -23,7 +23,7 @@ export const ReviewHeader = () => {
 			</MyButton>
 			{visible ?
 				<MyModal modalVisible={setVisible} title='Отзыв'>
-					<MyForm />
+					<MyForm modalVisible={setVisible} />
 				</MyModal>
 				: null}
 		</div>

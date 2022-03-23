@@ -1,3 +1,7 @@
+@font-face {
+  font-family: Factor;
+  src: url("../../../fonts/FactorAMedium-Regular.ttf");
+}
 .modal-wrapper {
   position: fixed;
   top: 0;
@@ -23,6 +27,8 @@
   padding: 24px;
 }
 .modal-title {
+  font-family: Factor;
+  font-weight: 500;
   color: #333333;
   font-size: 24px;
   line-height: 28px;

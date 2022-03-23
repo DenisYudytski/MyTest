@@ -1,8 +1,39 @@
 .text-area {
-  width: 626px;
-  height: 103px;
+  width: 614px;
+  height: 91px;
   border: 1px solid #e0e0e0;
-  color: #8a8a8a;
-  padding: 0;
   resize: none;
+  font-family: inherit;
+  font-size: inherit;
+  padding: 0;
+  padding: 12px 0 0 12px;
+  outline: none;
+}
+
+textarea.text-area:focus {
+  border: 2px solid #585cc6;
+}
+
+.text-area__wrapper {
+  position: relative;
+}
+
+.counter {
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+  color: #8a8a8a;
+  font-size: 10px;
+}
+
+.full {
+  color: red;
+}
+.error {
+  border: 2px solid red;
+  color: red;
+}
+textarea.error:focus {
+  border: 2px solid red;
+  color: red;
 }
