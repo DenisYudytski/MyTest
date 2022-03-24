@@ -1,11 +1,12 @@
 @font-face {
   font-family: FactorMedium;
-  src: url('../../fonts/FactorAMedium-Regular.ttf');
+  src: url("../../fonts/FactorAMedium-Regular.ttf");
 }
 .review-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin: 39px 19px 0 80px;
 }
 
 .review-title {
@@ -13,8 +14,8 @@
   font-weight: 500;
   font-size: 68px;
   line-height: 88px;
-  margin-left: 80px;
-  margin-top: 39px;
+  /* margin-left: 80px;
+  margin-top: 39px; */
 }
 
 .plus-icon {
@@ -23,5 +24,5 @@
 }
 
 .add-review-btn {
-  margin-right: 56px;
+  /* margin-right: 60px; */
 }

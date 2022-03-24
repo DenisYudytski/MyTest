@@ -1,15 +1,13 @@
 @font-face {
   font-family: FactoryNormal;
-  src: url('../../fonts/FactorAMedium-Regular.ttf');
+  src: url("../../fonts/FactorAMedium-Regular.ttf");
 }
 .home {
   position: relative;
-  background-color: #585cc6;
-  /* height: 1707px; */
-  padding-bottom: 111px;
+  padding-bottom: 89px;
 }
 .wrapper {
-  padding: 93px 0 0px 88px;
+  padding: 93px 0 0px 0px;
 }
 
 .title {
@@ -23,6 +21,11 @@
   color: #ffffff;
 }
 
+.spiral {
+  position: absolute;
+  right: -125px;
+  top: -130px;
+}
 /* .userCard {
 	position: absolute;
 	left: 599px;

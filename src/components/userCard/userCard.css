@@ -1,14 +1,14 @@
 @font-face {
   font-family: FactorBold;
-  src: url('../../fonts/FactorA-Bold.ttf');
+  src: url("../../fonts/FactorA-Bold.ttf");
 }
 @font-face {
   font-family: GilroyReg;
-  src: url('../../fonts/Gilroy-Regular.ttf');
+  src: url("../../fonts/Gilroy-Regular.ttf");
 }
 @font-face {
   font-family: Gilroymedium;
-  src: url('../../fonts/Gilroy-Medium.ttf');
+  src: url("../../fonts/Gilroy-Medium.ttf");
 }
 .userCard {
   letter-spacing: 0.01em;
@@ -21,6 +21,7 @@
 .userCard-wrapper {
   display: flex;
   /* position: relative; */
+  height: 50%;
 }
 
 .user-image {
@@ -29,7 +30,7 @@
 }
 
 .userInfo {
-  font-family:Gilroymedium;
+  font-family: Gilroymedium;
   background: #ffffff;
   border-radius: 2px;
   display: flex;
@@ -61,8 +62,8 @@
   margin-bottom: 18px;
 }
 .sex-item::after {
-  content: '';
-  background-image: url('../../img/svg/sex.svg');
+  content: "";
+  background-image: url("../../img/svg/sex.svg");
   width: 16px;
   height: 18px;
   display: inline-block;
@@ -70,7 +71,6 @@
   margin-bottom: -3px;
 }
 .info-item {
-
   margin-right: 40px;
 }
 
@@ -85,17 +85,16 @@
   align-items: center;
 }
 .pet::before {
-  content: '';
-  background-image: url('../../img/svg/DogFood.svg');
+  content: "";
+  background-image: url("../../img/svg/DogFood.svg");
   width: 32px;
   height: 21px;
   display: inline-block;
   margin-right: 12px;
   margin-bottom: -3px;
 }
-.sex{
+.sex {
   display: flex;
-  
 }
 .sex-item {
   margin-right: 10px;

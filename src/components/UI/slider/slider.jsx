@@ -26,7 +26,7 @@ export const Slider = ({ views }) => {
 		}
 	}
 	return (
-		<div>
+		<div className='slider'>
 			<div className='container-slider'>
 				{views.map((view, index) => index % 2 === 0 ?
 					<div className={slideIndex === index + 1 ? "slide active-anim" : "slide"}>

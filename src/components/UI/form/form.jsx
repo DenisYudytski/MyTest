@@ -20,6 +20,8 @@ export const MyForm = ({ modalVisible }) => {
 	const [formValid, setFormValid] = useState(false)
 	const dispatch = useDispatch()
 
+
+
 	useEffect(() => {
 		if (nameErrorMessage || areaErrorMessage) {
 			setFormValid(false)
@@ -28,12 +30,12 @@ export const MyForm = ({ modalVisible }) => {
 		}
 	}, [nameErrorMessage, areaErrorMessage])
 
-	const sendView = async () => {
+	const sendView = () => {
 		try {
 			dispatch(setStatus("loading"))
 			const date = new Date()
-			// let view
-			const view = {			//Что бы ошибку спровоцировать я писал здесь вместо объекта let view и ничего не присваивал, не знаю как без запросов на сервер ошибку организовать
+			// let view          Что бы вызвать ошибку, вместо объекта view объявлял переменную и не инициализировал
+			const view = {
 				id: Date.now(),
 				image: '',
 				name: inputValue,
@@ -45,15 +47,15 @@ export const MyForm = ({ modalVisible }) => {
 				throw new Error
 			}
 			dispatch(addView(view))
-			setTimeout(() => {  // Типа жду ответа сервера))0)0
-				dispatch(setStatus('load'))
-			}, 2000)
+			setTimeout(() => {
+				dispatch(setStatus("load"))
+			}, 1000)
 
 		} catch (error) {
-
 			setTimeout(() => {
 				dispatch(setStatus('error'))
-			}, 2000)
+			})
+
 		}
 
 

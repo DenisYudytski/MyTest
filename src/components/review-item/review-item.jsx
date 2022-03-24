@@ -11,8 +11,8 @@ export const ReviewItem = ({ view, margin, image = def }) => {
 			<div className="review-item__header">
 				<Image src={image} height={52} width={52} />
 				<div className='name'>{view.name}</div>
-				<div className="date">{view.date}</div>
 			</div>
+			<div className="date">{view.date}</div>
 			<div className="review-item__content">{view.content}</div>
 		</div>
 	)

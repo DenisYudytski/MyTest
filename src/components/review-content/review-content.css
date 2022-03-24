@@ -1,4 +1,5 @@
 .review-content {
-  margin-left: 80px;
+  /* width: 91.473%; */
+  margin: 0 19px 0 80px;
   position: relative;
 }
